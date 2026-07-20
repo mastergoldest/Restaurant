@@ -32,31 +32,32 @@
 .hero-positions-image4{
     position: absolute;
     left: 80px;
-    top: 35%;
+    top: 15%;
 }
 .hero-positions-image5{
     position: absolute;
-    left: 50%;
-    top: 25%;
+    left: 40%;
+    top: 15%;
 }
 .hero-positions-image6{
     position: absolute;
     left: 75%;
-    top: 20%;
+    top: 11%;
 }
 .hero-positions-image7{
     position: absolute;
     left: 80%;
-    top: 60%;
+    top: 55%;
 }
 .max-length{
-    max-width: 80rem;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding: 20px;
 }
 .max-length nav{
-    padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,14 +67,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 65%;
     
 }
 .menu-card ul { 
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 40px;
+    gap: 20px;
 }
 .menu-card ul a{ 
     text-decoration: none;
@@ -98,6 +99,117 @@
 .hamburger{
     display: none;
 }
+.hero-text-card{
+    display: flex;
+    flex-direction: column;
+   min-height: 100vh;
+    justify-content: center;
+    gap: 70px;
+}
+.hero-text-card h1{
+   font-width: 700;
+   font-size: 70px;
+   line-height: 72%;
+   color: var(--text-color);
+}
+.hero-card-card-p{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-card-card-p p{
+   font-width: 400;
+   font-size: 1rempx;
+   color: #5c6574;
+}
+.hero-card-card-button{
+    display: flex;
+    gap: 20px;
+}
+.Black-button{
+    background-color: var(--text-color);
+    color: white;
+    font-width: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    width: 120px;
+    height: 54px;
+}
+.Book-button{
+    background-color: var(--button-colo);
+    color: white;
+    font-width: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    width: 167px;
+    height: 54px;
+}
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 45px;
+   width: 45px;
+   border: 2px solid var(--text-color); 
+   border-radius: 50%;
+}
+.hero-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero-card-container-image{
+    position: relative;
+    z-index: 1;
+}
+.hero-card-container-image small{
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+
+}
+/* .hero-card-container-image{
+    max-width: 316px;
+    
+} */
+@media screen and (max-width: 1200px) {
+ .hero-text-card{
+        gap: 50px;
+}
+.hero-text-card h1{
+        font-width: 700;
+        font-size: 50px;
+        line-height: 100%;
+     }
+.max-length{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 20px;
+    }
+    
+.hero-card-container-image1 img{
+        width: 416px;
+    }
+.hero-card-container-image small img{
+        width: 264px;
+        height: 263px;
+        object-fit: cover;
+    }
+.hero-card-container-image small {
+        left: -100px;
+    }
+
+}
 @media screen and (max-width: 800px) {
 .hero-positions-image5{
         display: none;
@@ -111,7 +223,7 @@
         top: 50%;
     }
 .hero-positions-image4{
-        position: absolute;
+       display: none;
         left: 40px;
         top: 20%;
     }
@@ -181,5 +293,40 @@ justify-content: center;
     border-radius: 20px;
    
 }
-
+.hero-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero-text-card{
+    display: flex;
+    flex-direction: column;
+   min-height: 0vh;
+    justify-content: center;
+    gap: 70px;
+}
+.max-length{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20px;
+}
+.hero-card-container-image{
+    padding-top: 30px;
+}
+.hero-card-container-image1 img{
+    width: 316px;
+}
+.hero-card-container-image small img{
+    width: 164px;
+    height: 163px;
+    object-fit: cover;
+    left: 0px;
+}
+.hero-card-container-image small {
+    left: -20px;
+}
 }
