@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=David+Libre:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 :root{
     --text-color:#101A24;
@@ -109,7 +112,6 @@
 .hero-text-card h1{
    font-width: 700;
    font-size: 70px;
-   line-height: 72%;
    color: var(--text-color);
 }
 .hero-card-card-p{
@@ -176,10 +178,64 @@
     left: -150px;
 
 }
-/* .hero-card-container-image{
-    max-width: 316px;
-    
-} */
+.special-dishes{
+  background-color: #f3f3f4; 
+   
+}
+.welcome-section{
+  background-color: #f3f3f4;  
+}
+.welcome-dish{
+   position: relative; 
+}
+.welcome-dish1{
+   position: absolute;
+   left: 0; 
+   top: 60px;
+}
+.welcome-dish2{
+   position: absolute;
+   left: 50px; 
+   top: 270px;
+}
+.welcome-dish3{
+   position: absolute;
+   right: 0px; 
+   top: 40px;
+}
+.welcome-dish2 img{
+  width: 150px;
+}
+.welcome-dish3 img{
+ width: 100px;
+}
+.welcome-special-dishes-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.special-background1{
+    position: absolute;
+    right: 890px;
+    bottom: 250px;
+   transform: rotate(60deg);
+}
+.special-background2{
+    position: absolute;
+    left: 500px;
+    top: 150px;
+}
+.special-background3{
+    position: absolute;
+    right: 800px;
+    bottom: 200px;
+}
+.special-background4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 @media screen and (max-width: 1200px) {
  .hero-text-card{
         gap: 50px;
@@ -209,6 +265,112 @@
         left: -100px;
     }
 
+}
+.special-dishes-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  
+}
+.special-dishes-position1{
+    position: absolute;
+    left: 10%;
+    top: 0;
+
+}
+.special-dishes-position2{
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+.special-dishes-position3{
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    
+
+}
+.special-dishes-position4{
+    position: absolute;
+    right: 40%;
+    bottom: 0%;
+
+}
+.special-dishes-position5{
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+.special-dishes-position6{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.special-dishes-card h1{
+    font-width: 700;
+    font-size: 60px;
+    color: var(--text-color);
+}
+.special-dishes-card p{
+    font-width: 400;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.SpecialDishes{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(265px, 1fr));
+    gap: 5px;
+    width: 100%;
+    place-items: center;
+}
+.SpecialDishes-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SpecialDishes-active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 150px 20px 70px 20px;
+    border-radius: 50px 0;
+}
+.SpecialDishes-noneactive{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    border: 1px solid white;    
+    padding: 150px 20px 70px 20px;
+    border-radius: 50px 0;
+}
+.SpecialDishes-card h2{
+  font-width: 700;
+  font-family: 20px;
+  color: var(--text-color);
+
+}
+.SpecialDishes-image{
+position: relative;
+margin-bottom: -40px;
+}
+.SpecialDishes-image p{
+position: absolute;
+height: 54px;
+width: 54px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+color: white;
+justify-content: center;
+background-color: var(--text-color);
+right: 0px;
+top: 30px;
 }
 @media screen and (max-width: 800px) {
 .hero-positions-image5{
@@ -328,5 +490,26 @@ justify-content: center;
 }
 .hero-card-container-image small {
     left: -20px;
+}
+.special-dishes-card h1{
+    font-width: 700;
+    font-size: 30px;
+
+}
+.special-dishes-card p{
+    font-width: 400;
+    font-size: .8rem;
+
+}
+.hero-text-card h1{
+    font-width: 500;
+    font-size: 30px;
+ }
+.welcome-special-dishes-card{
+    display: flex;
+   justify-content: center;
+}
+.special-position-card{
+    display: none;
 }
 }
