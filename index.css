@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=David+Libre:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
@@ -15,6 +16,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 .hero-positions-image1{
     position: absolute;
@@ -235,6 +237,276 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.experts-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.experts-section-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.experts-section-card-sub1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.experts-section-card-sub1 h1{
+    font-size: 60px;
+    color: var(--text-color);
+    font-width: 700;
+}
+.experts-section-card-sub1 p{
+    font-width: 400;
+    font-size: 1rem;
+    color:#5c6574;
+}
+.experts-section-flex-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.experts-section-flex-containersub1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.experts-section-flex-containersubi{
+    display: flex;
+    gap: 10px;
+}
+.experts-section-flex-containersubi small{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 24px;
+   width: 24px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   background-color: var(--button-colo); 
+}
+.experts-section-flex-containersubi p{
+   font-size: 15px;
+   color:#5c6574;
+}
+.chef-position1{
+    position: absolute;
+    top: 50px;
+    
+}
+.chef-position2{
+    position: absolute;
+    left: 200px;
+    top: 400px;}
+
+.happy-customer{
+    background-color: #f3f3f4; 
+    position: relative;
+}
+.happy-customer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+.happy-customer-card h1{
+   font-size: 60px;
+   color: var(--text-color);
+   padding: 20px;
+}
+.happy-customer-card p{
+   font-size: 1rem;
+   color: #5c6574;
+}
+h1{
+    font-family: "David Libre", serif;
+    font-weight: 700;
+}
+.brain-position{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.happy-customer-card-grid{
+    display: grid;
+    overflow-x: scroll;
+    padding: 60px;
+    grid-template-columns: repeat(6, 1fr);
+    scrollbar-width: none;
+    gap: 50px;
+}
+.happy-customer-card-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 50px 0px;
+    /* overflow-x: scroll; */
+    
+    padding:80px 30px 30px 30px;
+    position: relative;
+    width: 540px;
+}
+.personalme img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.happy-customer-card-sub-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    right: 50%;
+}
+.carosell{
+display: flex;
+justify-content: center;
+gap: 20px;
+
+}
+.caroselli{
+height: 7px;
+width: 7px;
+border-radius: 50%;
+background-color: var(--text-color);
+
+}
+.carosellii{
+background-color: var(--button-colo);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.carosellii{
+background-color: var(--button-colo);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.caroselliii{
+background-color: var(--text-color);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.caroselliv{
+background-color: var(--text-color);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.carosellv{
+background-color: var(--text-color);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.carosellvi{
+background-color: var(--text-color);
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+.form-card{
+  padding: 80px 0;  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(assets/eatarybg.png);
+  gap: 40px;
+  border-radius: 30px;
+  align-items: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  
+}
+.feedeback{
+    position: relative;
+}
+.form-card h1{
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+.form-card form{
+ display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 20px;
+  width: 80%;
+  gap: 20px;
+}
+.form-card form input{
+    outline: none;
+    flex: 1;
+    border: none;
+}
+.form-card form button{
+   color: white;
+   border: none;
+   background-color: var(--button-colo);
+   border-radius: 10px;
+   width: 150px;
+   height: 50px;
+}
+footer{
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footers-card1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+.footers-card1 p{
+    color: #5c6574;
+    font-width: 400;
+    font-size: 12px;
+
+}
+.footers-card1 ul{
+    color: #5c6574;
+    font-width: 700;
+    font-size: 12px;
+    list-style: none;
+
+}
+.footers-card1 ul li a{
+    color: #5c6574;
+    text-decoration: none;
+ 
+
+}
+.footers-card1 h2{
+    color: var(--text-color);
+    font-size: 1rem;
+
+}
+.footer-last{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #5c6574;
+    font-width: 400;
+    font-size: 12px;
 }
 @media screen and (max-width: 1200px) {
  .hero-text-card{
@@ -511,5 +783,74 @@ justify-content: center;
 }
 .special-position-card{
     display: none;
+}
+.experts-section-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.experts-section-card-sub1 h1{
+    font-size: 30px;
+}
+.expert-chef img{
+height: 450px;
+
+}
+.chef-position1{
+    display: none;
+    
+}
+.brain-position{
+    display: none;
+}
+.chef-position2{
+  display: none;
+}
+.happy-customer-card h1{
+    font-size: 30px;
+    color: var(--text-color);
+    padding: 20px;
+ }
+ .form-card h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .form-card form{
+    display: flex;
+     padding: 20px;
+     flex-wrap: wrap;
+     justify-content: center;
+     background-color: white;
+     border-radius: 20px;
+     width: 80%;
+     gap: 20px;
+   }
+   
+.form-card{
+  padding: 40px 0;  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(assets/eatarybg.png);
+  gap: 40px;
+  border-radius: 30px;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  top: -100px;
+  
+}
+footer{
+    padding-top: 0px;
+}
+.footers-card1{
+    justify-content: center;
+    gap: 30px;
+
 }
 }
